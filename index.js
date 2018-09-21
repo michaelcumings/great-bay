@@ -17,7 +17,7 @@ connection.connect((err) => {
 function newItem() {
     console.log("Inserting a New Item...\n");
     var query = connection.query(
-      "INSERT INTO music SET ?",
+      "INSERT INTO itemList SET ?",
       {
         item: userInput,
         initialBid: userInitBid,
